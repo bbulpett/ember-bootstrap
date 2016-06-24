@@ -1,4 +1,10 @@
 {{outlet}}
 <div class="panel panel-default">
 <h2>Data</h2>
+<ul>
+	<li>Initial card</li>
+	{{#each model as |item}}
+	<li>{{item.name}}</li>
+	{{/each}}
+</ul>
 </div>
